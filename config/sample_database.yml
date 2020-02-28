@@ -1,0 +1,22 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: root
+  host: localhost
+  port: 3306
+
+development:
+  <<: *default
+  database: shastic_challenge_dev
+
+test:
+  <<: *default
+  database: shastic_challenge_test
+
+production:
+  <<: *default
+  database: < production database name >
+  username: < production database username >
+  password: < production database password >
