@@ -1,0 +1,25 @@
+version: "3"
+services:
+  db:
+    image: "mysql:5.7"
+    environment:
+      MYSQL_PASSWORD: "true"
+      MYSQL_DATABASE: "web_tracking_db"
+      MYSQL_USER: "root"
+    ports:
+      - "3307:3306"
+  shastic_challenge:
+    build: .
+    command: bash -c 'bundle exec rackup -p 4567'
+    depends_on:
+      - db
+    ports:
+      - "4568:4567"
+    environment:
+      WAIT_HOSTS: db:3306
+      DB_USERNAME: root
+      DB_PASSWORD: root
+      DB_DATABASE: sample
+      DB_PORT: 3306
+    volumes:
+      - ".:/app"
