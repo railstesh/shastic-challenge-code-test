@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'json', '~> 2.1'
 gem 'mysql2'
 gem 'rake', '~> 12.1'
-gem 'sinatra', '~> 2.0'
+gem 'sinatra', '~> 2.2'
 gem 'sinatra-activerecord'
 gem 'auto_increment'
 

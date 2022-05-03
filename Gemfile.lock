@@ -35,8 +35,8 @@ GEM
     parallel (1.19.1)
     parser (2.7.0.3)
       ast (~> 2.4.0)
-    rack (2.2.2)
-    rack-protection (2.0.8.1)
+    rack (2.2.3)
+    rack-protection (2.2.0)
       rack
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
@@ -65,17 +65,17 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.7)
     ruby-progressbar (1.10.1)
-    ruby2_keywords (0.0.2)
+    ruby2_keywords (0.0.5)
     shoulda-matchers (4.3.0)
       activesupport (>= 4.2.0)
     simplecov (0.18.5)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
     simplecov-html (0.12.2)
-    sinatra (2.0.8.1)
+    sinatra (2.2.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.8.1)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
       tilt (~> 2.0)
     sinatra-activerecord (2.0.14)
       activerecord (>= 3.2)
@@ -103,7 +103,7 @@ DEPENDENCIES
   rubocop
   shoulda-matchers
   simplecov
-  sinatra (~> 2.0)
+  sinatra (~> 2.2)
   sinatra-activerecord
 
 BUNDLED WITH
